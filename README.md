@@ -11,6 +11,9 @@
  - User Sign Up with firebase ✅
  - User Sign In with firebase ✅
  - Deployed the app into firebase ✅
+ - App gets redirected on successful auth
+ - Redux store has been created 
+ - updated profile
 
 
 # Features
