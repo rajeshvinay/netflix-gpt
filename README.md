@@ -14,6 +14,11 @@
  - App gets redirected on successful auth
  - Redux store has been created 
  - updated profile
+ - Two bug fixes 
+    - when user is signed in , then only allow the user to browse page
+    - when user is signed in , don't allow the user to navigate to login page
+        - For the above purposes we have moved the useEffect logic to header component which was previously in body component. Also navigation happens only through this useEffect logic
+ - Unsubscribed the onAuthStateChanged callback on useEffect clean up function
 
 
 # Features
