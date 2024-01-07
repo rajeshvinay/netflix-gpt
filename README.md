@@ -19,6 +19,7 @@
     - when user is signed in , don't allow the user to navigate to login page
         - For the above purposes we have moved the useEffect logic to header component which was previously in body component. Also navigation happens only through this useEffect logic
  - Unsubscribed the onAuthStateChanged callback on useEffect clean up function
+ - Added constant file and values for user avatar and netflix logo 
 
 
 # Features
