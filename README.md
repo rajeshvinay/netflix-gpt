@@ -20,6 +20,9 @@
         - For the above purposes we have moved the useEffect logic to header component which was previously in body component. Also navigation happens only through this useEffect logic
  - Unsubscribed the onAuthStateChanged callback on useEffect clean up function
  - Added constant file and values for user avatar and netflix logo 
+ - TMDB sign up and register for API key and access token
+ - Integrate TMDB api in browse page to fetch movies data
+ - store the movies data inside the redux store
 
 
 # Features
