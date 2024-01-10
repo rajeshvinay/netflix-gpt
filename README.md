@@ -23,6 +23,8 @@
  - TMDB sign up and register for API key and access token
  - Integrate TMDB api in browse page to fetch movies data
  - store the movies data inside the redux store
+ - Appended movie detail
+ - Made a new API call to fetch all video details of a movie based on the movie id
 
 
 # Features
