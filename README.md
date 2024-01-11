@@ -25,6 +25,13 @@
  - store the movies data inside the redux store
  - Appended movie detail
  - Made a new API call to fetch all video details of a movie based on the movie id
+ - Custom hook for Now Playing movies 
+ - Create movieSlice
+ - Update store with movies data
+ - Showing trailer video data by embedding the youtube video 
+ - Added tailwind classes to look containers good
+
+ <Delete it tomorrow --> 1:47:00 done
 
 
 # Features

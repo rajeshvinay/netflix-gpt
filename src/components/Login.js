@@ -28,7 +28,6 @@ const Login = () => {
             createUserWithEmailAndPassword(auth,email.current.value,password.current.value)
             .then(userCredential=>{
                 const user = userCredential.user
-                console.log(user)
                 updateProfile(user, {
                     displayName: name.current.value, photoURL: ""
                   }).then(() => {
@@ -49,11 +48,9 @@ const Login = () => {
             signInWithEmailAndPassword(auth,email.current.value,password.current.value)
             .then(userCredential=>{
                 const user = userCredential.user
-                console.log(user)
                 navigate('/browse')
             })
             .catch(error=>{
-                console.log(error.message)
                 const errorCode = error.code;
                 const errorMessage = error.message;
                 setErrorMsg(errorCode+'-'+errorMessage)
