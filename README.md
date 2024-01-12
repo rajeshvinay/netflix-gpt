@@ -30,8 +30,11 @@
  - Update store with movies data
  - Showing trailer video data by embedding the youtube video 
  - Added tailwind classes to look containers good
-
- <Delete it tomorrow --> 1:47:00 done
+ - Added Popular movies
+ - Added Upcoming movies
+ - Added Trending movies
+ - Added Now Playing movies
+ - Made lot of CSS
 
 
 # Features
