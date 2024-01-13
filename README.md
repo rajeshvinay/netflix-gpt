@@ -35,6 +35,10 @@
  - Added Trending movies
  - Added Now Playing movies
  - Made lot of CSS
+ - Started integrating GPT
+ - Created a new slice for gpt toggle
+ - Added a new button to switch to that view
+ - Created new components to have the GPT view
 
 
 # Features
