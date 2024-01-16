@@ -6,6 +6,7 @@ import { auth } from '../utils/firebase'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { addUser } from '../utils/userSlics'
+import { BACKGROUND_IMAGE } from '../utils/constants'
 
 const Login = () => {
     const dispatch = useDispatch()
@@ -61,7 +62,7 @@ const Login = () => {
     <div>
         <Header/>
         <div className='absolute'>
-            <img src='https://assets.nflxext.com/ffe/siteui/vlv3/c31c3123-3df7-4359-8b8c-475bd2d9925d/8ae38218-41c3-4396-b9af-15e97636a40f/US-en-20231225-popsignuptwoweeks-perspective_alpha_website_large.jpg'
+            <img src={BACKGROUND_IMAGE}
             alt='background'
             >
             </img>
