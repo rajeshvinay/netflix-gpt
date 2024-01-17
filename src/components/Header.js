@@ -4,8 +4,9 @@ import { auth } from '../utils/firebase';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addUser, removeUser } from '../utils/userSlics';
-import { LOGO, USER_AVATAR } from '../utils/constants';
+import { LOGO, SUPPORTED_LANGUAGES, USER_AVATAR } from '../utils/constants';
 import { toggleGPTAction } from '../utils/gptSlice';
+import { changeLanguage } from '../utils/configSlice';
 
 const Header = () => {
   const dispatch = useDispatch()
@@ -43,6 +44,9 @@ const Header = () => {
 const handleGPTSearch = ()=>{
   dispatch(toggleGPTAction())
 }
+const handleLanguageChange = (e) =>{
+  dispatch(changeLanguage(e.target.value))
+}
   return (
     <div className='absolute w-full px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between' 
     
@@ -54,7 +58,12 @@ const handleGPTSearch = ()=>{
             alt='netflix-logo'
         ></img>
         {user &&<div className='flex p-2'>
-          <button className='py-2 px-4 mx-4 my-2 text-white bg-purple-800 rounded-lg' onClick={handleGPTSearch}> {gptUI?.toggleGPT?"Back to Browse Page":"GPT Search"}</button>
+          {gptUI?.toggleGPT && <select className='cursor-pointer p-2 bg-gray-900 text-white m-2' onChange={handleLanguageChange}>
+            {SUPPORTED_LANGUAGES?.map((language,index)=>(
+              <option key={index} value={language?.identifier}>{language.name}</option>
+            ))}
+          </select>}
+          <button className='py-2 px-4 mx-4 my-2 text-white bg-purple-800 rounded-lg' onClick={handleGPTSearch}> {gptUI?.toggleGPT?"Home Page":"GPT Search"}</button>
           <span>{user.displayName}</span>
           <img className='h-12 w-12 mx-2 mt-1' src={USER_AVATAR} alt='usericon'></img>
            <button className='text-white font-bold' onClick={handleSignOut}>(Sign Out)</button>

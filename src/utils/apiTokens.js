@@ -8,3 +8,5 @@ export const  API_OPTIONS = {
       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0MjYyYWMwMWFlN2RjYjI2Mjc5NGFkNWY4NGE5MzJmMiIsInN1YiI6IjY1OWI4OTRjYjRhNTQzMDE0ODEwYjQ5YyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.79mKCab-CVH3FS9LYJQnBhunSEqbeMVQlbpw9SlXkuU'
     }
   };
+
+export const OPENAI_GPT_SECRET_KET = "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"
