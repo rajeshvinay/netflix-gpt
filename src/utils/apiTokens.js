@@ -9,4 +9,4 @@ export const  API_OPTIONS = {
     }
   };
 
-export const OPENAI_GPT_SECRET_KET = "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"
+export const OPENAI_GPT_SECRET_KET = "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"
