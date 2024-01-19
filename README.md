@@ -39,6 +39,13 @@
  - Created a new slice for gpt toggle
  - Added a new button to switch to that view
  - Created new components to have the GPT view
+ - Multi-language support
+ - Open AI key
+ - GPT search API call
+ - Memoization
+ - Added .env file
+ - Added .env to gitignore
+ - Made the app responsive for mobile view
 
 
 # Features
